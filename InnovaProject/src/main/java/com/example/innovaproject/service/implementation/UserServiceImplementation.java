@@ -22,8 +22,8 @@ public class UserServiceImplementation implements UserService {
     }
 
     @Override
-    public User read(int id) {
-        return userRepository.findById((long) id).orElseThrow(() -> new UserNotFoundException());
+    public User read(String id) {
+        return userRepository.findById( id).orElseThrow(() -> new UserNotFoundException());
     }
 
     @Override

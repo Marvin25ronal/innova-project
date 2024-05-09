@@ -5,7 +5,7 @@ import com.example.innovaproject.models.User;
 
 public interface UserService {
     User create(UserDto user);
-    User read(int id);
+    User read(String id);
     User update(UserDto user);
     void delete(String id);
 

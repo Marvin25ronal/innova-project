@@ -19,7 +19,7 @@ public class UserController {
     }
 
     @GetMapping("/read/{id}")
-    public ResponseEntity<User> read( @PathVariable int id) {
+    public ResponseEntity<User> read( @PathVariable String id) {
         return ResponseEntity.ok(userService.read(id));
     }
 
